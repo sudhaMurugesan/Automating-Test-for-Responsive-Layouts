@@ -1,0 +1,92 @@
+extends layout
+
+block content
+
+  
+    nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse(role='navigation')
+      div.container
+        div.navbar-header.page-scroll
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.page-scroll(href='#intro') Automate tests for Responsive Sites
+        // Collect the nav links, forms, and other content for toggling
+        div.navbar-collapse.navbar-ex1-collapse.collapse.in(style='')
+          ul.nav.navbar-nav
+            // Hidden li included to remove active class from about link when scrolled up past about section
+            li.hidden
+                a.page-scroll(href='#intro')
+            li.active
+              a.page-scroll(href='#screenshot') Screenshot
+            li
+              a.page-scroll(href='#upload') Upload
+            li
+              a.page-scroll(href='#difference') Difference
+    
+    section#intro.intro-section.appl-section.height-100-prercent
+        .container.height-100-prercent
+            .header-section
+            span.h1 Automate Responsive Tests
+            .content-section.height-60-prercent
+              .row
+                  h1 Intro
+                  p To get the difference
+                  p Enter the URL of the web page
+                  p upload the VD  
+            .footer-section    
+                button.btn.btn-primary.page-scroll(data-href='#screenshot') Start  
+           
+    section#screenshot.screeenshot-section.appl-section.height-100-prercent
+      .container.height-100-prercent
+        .header-section
+            span.h1 Screenshot
+        .content-section.height-60-prercent.row
+            .col-xs-12.height-15-percent
+                form#inputForm(role='search')
+                    .input-group
+                        .input-group-addon http://
+                        input#inputFormGetURL.form-control(type='text', placeholder='Enter URL')
+                        span.input-group-btn
+                            button#inputFormSubmit.btn.btn-default(type='button') Submit
+            .col-xs-12.height-85-percent        
+                .height-100-prercent
+                    #htmlScreenshot.drop-zone.center-content.height-100-prercent
+                        | image here
+                           
+        .footer-section    
+            button.btn.btn-primary.page-scroll(data-href='#upload') Next  
+    section#upload.upload-section.appl-section.height-100-prercent
+      .container.height-100-prercent
+        .header-Upload
+            span.h1 Upload
+        .content-section.height-60-prercent.row
+            .col-xs-12.height-15-percent
+                form#uploadForm(enctype='multipart/form-data')
+                    .input-group
+                        input#archiveFolder(type='file', name='decompress')
+            .col-xs-12.height-85-percent  
+                .height-100-prercent
+                    #VDImages.drop-zone.center-content.height-100-prercent
+                        | image here
+        .footer-section    
+            button#differentiate.btn.btn-primary.page-scroll(data-href='#difference') Differentiate
+    section#difference.upload-section.appl-section.height-100-prercent
+      .container.height-100-prercent
+        .header-Upload
+            span.h1 Difference
+        .content-section.height-85-percent.row
+            .col-xs-2.height-100-prercent
+                    #vd_images_find_diff.height-100-prercent.drop-zone.center-content
+                        | VD images here
+            .col-xs-2.height-100-prercent
+                    .mismatch-details.height-100-prercent 
+                      p#match-percent.title-text.height-15-percent
+                      .match-graph.height-85-percent
+                        .graph-bar.height-100-prercent 
+                          .graph-thumb         
+            .col-xs-8.height-100-prercent 
+                    #diffImage.drop-zone.center-content.height-100-prercent
+                        | Diff image here
+

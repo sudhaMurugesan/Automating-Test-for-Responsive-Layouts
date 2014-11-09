@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+    title= title
+    block css
+      link(rel='stylesheet', href='/css/style.css')
+      link(rel='stylesheet', href='components/bootstrap/dist/css/bootstrap.css')
+    block js
+      script(src='http://localhost:35729/livereload.js')
+      script(src='components/jquery/dist/jquery.min.js')
+      script(src='components/handlebars/handlebars.min.js')
+      script(src='components/bootstrap/dist/js/bootstrap.min.js')
+      script(src='components/jquery-form/jquery.form.js')
+      script(src='components/resemblejs/resemble.js')
+      script(src='js/app.js')
+  body#page-top.overflow-hidden(data-spy='scroll', data-target='.navbar-fixed-top')
+    block content
+    include templates.jade
+
+

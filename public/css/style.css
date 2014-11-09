@@ -1,0 +1,111 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+ 
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+     width: 100%;
+    height: 100%;
+
+}
+
+.overflow-hidden{
+overflow: hidden;
+}
+.hideScroll{
+  width: 90%;
+
+}
+#htmlScreenshot{
+  width: 100%;
+  height:100%;
+
+}
+.drop-zone {
+border: 10px dashed #ccc;
+text-align: center;
+text-align: center;
+vertical-align: middle;
+}
+/*for aligning the text at hte center - http://css-tricks.com/centering-in-the-unknown */
+.center-content:before{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+.progress-zone{
+    background: url("../img/loader.gif") no-repeat center center;
+ }
+.complete-zone {
+overflow:scroll; 
+width: 104%;
+   
+}
+
+
+.appl-section {
+  
+    padding-top: 70px;
+    text-align: center;
+    background: #fff;
+}
+
+.width-100-percent{
+      width:100% !important;
+}
+.width-40-percent{
+      width:40% !important;
+}
+.height-100-prercent{
+    
+      height: 100%;
+}
+.height-85-percent{
+     height: 85%;
+}
+
+.height-60-prercent{
+     height: 60%;
+}
+.height-40-prercent{
+    
+      height: 40%;
+}
+.height-20-prercent{
+    
+      height: 40%;
+}
+.height-15-percent{
+     height: 15%;
+}
+.content-section{
+margin-top:2%;
+margin-bottom:2%;    
+}
+.center-input
+{
+    margin: 35% auto;
+}
+.thumbnail-section{
+padding: 5%;
+}
+.graph-bar{
+
+  position: relative;
+  width: 40px;
+  margin: -10px auto 0 auto;
+}
+.graph-thumb{
+  position: absolute;
+  bottom: 0;
+  background: url("../img/animated-strip.gif") repeat-y 100% center;
+  width:40px;
+}  
+.title-text{
+  font-size: 30px;
+}

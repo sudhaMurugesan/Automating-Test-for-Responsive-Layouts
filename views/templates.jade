@@ -1,0 +1,9 @@
+script#htmlScreenshot-template(type='text/x-handlebars-template')
+        img.screenshot_image(src='{{path}}')
+
+script#VDimages-template(type='text/x-handlebars-template')
+        {{#each images}}
+        div.col-xs-2.vd-img-wrapper
+            p {{name}} - {{width}} X {{height}}
+            img.VD_image.col-xs-12.thumbnail(src='{{src}}')
+        {{/each}}

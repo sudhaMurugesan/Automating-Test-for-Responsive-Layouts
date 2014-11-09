@@ -1,0 +1,14 @@
+{
+  "name": "workspace",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "jquery-form": "~3.46.0",
+    "handlebars": "~2.0.0",
+    "resemblejs": "~1.2.0"
+  }
+}
