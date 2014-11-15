@@ -72,7 +72,7 @@ var ScreenDiff = new function() {
     };
     this.showSimilarity = function(matchPercentage,diffImage){
 
-        $("#match-percent").html("Match %:"+matchPercentage);
+        $("#match-percent").html("Match % "+matchPercentage);
         var graph_height = $(".match-graph").height()*(matchPercentage/100);
        
         $(".graph-thumb").stop().animate({
