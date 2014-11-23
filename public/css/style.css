@@ -110,3 +110,4 @@ padding: 5%;
   font-size: 30px;
 }
 #vd_images_find_diff img{cursor:pointer;}
+#vd_images_find_diff{overflow: auto;}
